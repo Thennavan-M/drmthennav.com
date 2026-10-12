@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Thennavan M has moved to www.thennavan-m.com</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://www.thennavan-m.com/">
+<script>
+  // www.drmthennav.com is the old address. Send every visitor to the same
+  // page on the new site when it exists, otherwise to the home page.
+  (function () {
+    var pages = ['research', 'projects', 'publications', 'teaching', 'cv', 'contact'];
+    var first = location.pathname.split('/').filter(Boolean)[0] || '';
+    first = first.toLowerCase();
+    var path = pages.indexOf(first) >= 0 ? '/' + first + '/' : '/';
+    location.replace('https://www.thennavan-m.com' + path);
+  })();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://www.thennavan-m.com/"></noscript>
+<style>
+  body { margin: 3rem auto; max-width: 36rem; padding: 0 1rem; background: #fff; color: #1d2533; font: 1.05rem/1.6 system-ui, -apple-system, 'Segoe UI', sans-serif; }
+  a { color: #1f4e8c; }
+</style>
+</head>
+<body>
+<p>Dr. Thennavan M's website has moved to <a href="https://www.thennavan-m.com/">www.thennavan-m.com</a>.</p>
+</body>
+</html>
